@@ -8,10 +8,17 @@ if (url.slice(-15) == "en?from=sticker"){
 	var dl = "https://dl.stickershop.line.naver.jp/products/0/0/1/" + id + "/iphone/stickers@2x.zip";
 }
 // if end of link does not have en... 
-else {
-	let id = url.slice(42, -3);
-	console.log("LINE id (without en): " + id);
+else if (url.slice(-1) == "/") {
+	let id = url.slice(42, -1);
+	console.log("LINE id (without en, with /): " + id);
 	var dl = "https://dl.stickershop.line.naver.jp/products/0/0/1/" + id + "/iphone/stickers@2x.zip";
+
+}
+else{
+	let id = url.slice(42);
+	console.log("LINE id (without en, without /): " + id);
+	var dl = "https://dl.stickershop.line.naver.jp/products/0/0/1/" + id + "/iphone/stickers@2x.zip";
+
 
 }
 
