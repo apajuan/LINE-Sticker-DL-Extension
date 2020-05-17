@@ -12,4 +12,5 @@ or you can load as unpacked in chrome://extensions/ in developer mode.
 Go to desired line sticker, and click the LINE Sticker Downloader icon where a pop-up will appear.
 
 "Download Normal" is for normal, static stickers with no animations or sounds.
+
 "Download Other Sticker Types" is for stickers with animations, sounds, etc...
