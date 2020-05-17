@@ -1,23 +1,13 @@
-function dls(tab) {
-	//browser.tabs.create({
-		
-	//})
-	let msg = {
-		txt: "Button Clicked"
-	}
+// idk what it does tbh
+// lets popup show when store.line.me is on
 
-	//console.log("CLICK");
-	browser.tabs.sendMessage(tab.id, msg
-	).then(response => {
-		console.log("recieved msg from content script");
-		console.log(response.response);
-		if (response.response.slice(8, 10) == "dl"){
-			browser.tabs.create({
-				url: response.response
-			});
-		}
-	});
-}
-
-browser.browserAction.onClicked.addListener(dls);
-
+'use strict';
+  chrome.declarativeContent.onPageChanged.removeRules(undefined, function() {
+      chrome.declarativeContent.onPageChanged.addRules([{
+        conditions: [new chrome.declarativeContent.PageStateMatcher({
+          pageUrl: {hostEquals: 'store.line.me'},
+        })
+        ],
+            actions: [new chrome.declarativeContent.ShowPageAction()]
+      }]);
+    });

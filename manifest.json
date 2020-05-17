@@ -1,27 +1,27 @@
 {
 
-	"manifest_version": 2,
-	"name": "Line",
-	"version": "0.2",
-	"description": "Downloads LINE stickers.",
-
-	"content_scripts": [
-		{
-			"matches": ["*://store.line.me/*"],
-			"js": ["line.js"]
-		}
-	],
-
-	"background": {
-		"scripts": ["background.js"]
-	},
-
-	"browser_action": {
-
-		"default_icon": {
-			"16": "icons/page-16.png",
-			"32": "icons/page-32.png"
-		}
-	}
-
+  "name": "Line Sticker Downloader",
+  "version": "1.2",
+  "description": "An extension that downloads line stickers.",
+  "permissions": ["activeTab", "declarativeContent"],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "page_action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "icons/icon16.png",
+        "32": "icons/icon32.png",
+        "48": "icons/icon48.png",
+        "168": "icons/icon128.png"
+      }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "168": "icons/icon128.png"
+  },
+  "manifest_version": 2
 }

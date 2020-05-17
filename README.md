@@ -1,2 +1,3 @@
-# LINE-Sticker-DL-Extension
-Downloads LINE stickers using a FireFox extension
+# LINE sticker Downloader
+
+An extension for Chrome that downloads LINE stickers.

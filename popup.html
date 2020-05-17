@@ -1,13 +1,58 @@
 <!DOCTYPE html>
-<head>
-	<style>
-	</style>
-</head>
+<html>
+  <head>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 
-<body>
-	<button type="button">Test</button>
-	<button type="button">Test</button>
-</body>
+      button {
+        background-color: #00b84f; /* Green */
+        border: none;
+        color: white;
+        padding: 10px 20px;
+        margin: 4px 2px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 12px;
+        font-family: 'Roboto', sans-serif;
+        white-space: nowrap;
+        height: auto;
+        width: 200px;
+      }
+      .bgC {
+        background: linear-gradient(0deg, #FFFFFF 59%, #313131 41%);
+        background-size: 200px auto;
+      }
+      h1{
+        margin:auto;
+        z-index: -1;
+        position: absolute;
+        top: 10px;
+        right: 30px;
+        color: #4cb80c;
+      }
+      h2{
+        margin:auto;
+        z-index: -1;
+        position: absolute;
+        top: 35px;
+        right: 61px;
+        color: #FFFFFF;
+      }
+    </style>
+  </head>
+  <body class=bgC>
+    <div style="padding-bottom: 20px;">
+      <img src='./icons/icon48.png'></img>
+      <h1>LINE Sticker</h1>
+      <h2>Downloader</h2>
 
+    </div>
 
+    <div>
+      <button id="lineDownloadNormal">Download Normal</button>
+      <button id="lineDownloadOthers">Download Other Sticker Types</button>
+      <script src="popup.js" charset="utf-8"></script>
+    </div>
+  </body>
 </html>
