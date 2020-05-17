@@ -14,3 +14,7 @@ Go to desired line sticker, and click the LINE Sticker Downloader icon where a p
 "Download Normal" is for normal, static stickers with no animations or sounds.
 
 "Download Other Sticker Types" is for stickers with animations, sounds, etc...
+
+## Notes
+
+Animated stickers are downloaded as an .apng in the animations folder. You would have to convert them yourself to gif, or otherwise yourself.
