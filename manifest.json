@@ -1,7 +1,7 @@
 {
 
   "name": "Line Sticker Downloader",
-  "version": "1.2",
+  "version": "1.0",
   "description": "An extension that downloads line stickers.",
   "permissions": ["activeTab", "declarativeContent"],
   "background": {
